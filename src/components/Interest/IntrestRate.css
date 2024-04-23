@@ -1,0 +1,61 @@
+.interest-calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-form input[type="number"],
+.input-form input[type="text"],
+.input-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-form button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #fff;
+    color: #333;
+}
