@@ -6,25 +6,13 @@ import {
 } from "react-router-dom";
 import IntrestRate from "../components/Interest/InterestRate";
 import Counter from "../pages/Counter";
+import Header from "../components/layouts/header";
+import TodoPage from "../pages/todo/todo.page";
 
 const  AppRouter  = () =>{
     return  <Router>
     <div className="App">
-        <ul className="">
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/about">
-                    About Us
-                </Link>
-            </li>
-            <li>
-                <Link to="/contact">
-                    Contact Us
-                </Link>
-            </li>
-        </ul>
+        <Header></Header>
         <Routes>
             <Route
                 path="/"
@@ -33,6 +21,10 @@ const  AppRouter  = () =>{
             <Route
                 path="/about"
                 element={<Counter />}
+            ></Route>
+             <Route
+                path="/todo"
+                element={<TodoPage />}
             ></Route>
         </Routes>
     </div>

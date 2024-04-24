@@ -6,6 +6,8 @@ import { Button } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import DropdownLanguage from "@/components/dropLanguage"
 import { useTranslation } from "react-i18next";
+import Header from '../components/layouts/header';
+import Footer from '../components/layouts/footer';
 
 const Counter = () => {
   const count = useSelector((state) => state.counter.value)
@@ -13,7 +15,7 @@ const Counter = () => {
   const { t, i18n } = useTranslation();
   return (
     <div>
-      
+      <Header></Header>
       <div>
         <button
           aria-label="Increment value"
@@ -36,6 +38,7 @@ const Counter = () => {
       </div>
       <DropdownLanguage></DropdownLanguage>
       <p>{t("login")}</p>
+      <Footer></Footer>
     </div>
   )
 }
